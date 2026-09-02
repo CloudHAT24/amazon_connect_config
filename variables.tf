@@ -11,17 +11,14 @@ variable "connect_instance_id" {
 
 variable "queue_name" {
   description = "Amazon Connect Queue name"
+  Name = "TP_Outbound_Queue"
   type        = string
 }
 
-variable "queue_description" {
-  description = "Amazon Connect Queue description"
-  type        = string
-  default     = "Queue managed by Terraform"
-}
 
 variable "hours_of_operation_id" {
   description = "Amazon Connect Hours of Operation ID"
+  HOOP = "Business Hours"
   type        = string
 }
 
